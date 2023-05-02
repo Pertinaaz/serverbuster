@@ -3,7 +3,7 @@
 
 ## Bot Account
 
-In order to run the code and destroy some servers, you must first create a half-decent, passable bot account and grab its token at the [Developer Portal](https://discord.com/developers/applications). Create an application, name it whatever you wish, go to bot and generate a token for it. Paste the token into the config.js file.
+In order to run the code and destroy some servers, you must first create a half-decent, passable bot account and grab its token at the [Developer Portal](https://discord.com/developers/applications). Create an application, name it whatever you wish, go to the bot section and enable all intents. Generate and paste the token of the bot into the `config.js` file.
 
 ## Running
 
