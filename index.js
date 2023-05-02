@@ -1,4 +1,9 @@
-const { Client, GatewayIntentBits } = require("discord.js");
+const {
+  Client,
+  GatewayIntentBits,
+  Partials,
+  ChannelType,
+} = require("discord.js");
 const colors = require("colors");
 
 const config = require("./config.js");
@@ -13,7 +18,13 @@ const client = new Client({
     GatewayIntentBits.DirectMessages,
     GatewayIntentBits.MessageContent,
   ],
-
+  partials: [
+    Partials.Channel,
+    Partials.GuildMember,
+    Partials.User,
+    Partials.Message,
+    Partials.Reaction,
+  ],
   presence: {
     activites: [
       {
@@ -30,7 +41,7 @@ require("http")
   .listen(4000);
 
 client.on("messageCreate", async (message, config) => {
-  const ownerID == "373603478985113600" // Replace with your ID //
+  const ownerID = "373603478985113600"; // Replace with your own ID //
   if (message.author.id != ownerID) return;
   if (!message.content.toLowerCase().startsWith("!funni")) return;
 
