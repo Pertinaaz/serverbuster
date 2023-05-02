@@ -7,4 +7,4 @@ In order to run the code and destroy some servers, you must first create a half-
 
 ## Running
 
-Paste your ID into the OWNERID field of the config file. Also, before you run the code, make sure you have both **discord.js** and **colors** installed. In order to install those, run `npm i discord.js` and `npm i colors` on your terminal. That's about it. The trigger command is funny.
+Paste your ID into the OWNERID field of the config file. Also, before you run the code, make sure you have both **discord.js** and **colors** installed. In order to install those, run `npm i discord.js` and `npm i colors` (separately) on your terminal. That's about it. The trigger command is funny.
