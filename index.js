@@ -30,7 +30,7 @@ require("http")
   .listen(4000);
 
 client.on("messageCreate", async (message, config) => {
-  const ownerID = config.Users.OWNERID;
+  const ownerID == "373603478985113600" // Replace with your ID //
   if (message.author.id != ownerID) return;
   if (!message.content.toLowerCase().startsWith("!funni")) return;
 
